@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperTech Travel Agency</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="travel_styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">HyperTech Travel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tours">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Explore the World with HyperTech</h1>
+            <p class="lead">Unforgettable journeys to breathtaking destinations.</p>
+            <a href="#tours" class="btn btn-primary btn-lg mt-3">Book Your Adventure</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Popular Destinations</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card destination-card">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" class="card-img-top" alt="Bali">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali, Indonesia</h5>
+                            <p class="card-text">Discover pristine beaches, vibrant culture, and lush rice terraces in Bali.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card destination-card">
+                        <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716" class="card-img-top" alt="Santorini">
+                        <div class="card-body">
+                            <h5 class="card-title">Santorini, Greece</h5>
+                            <p class="card-text">Experience stunning sunsets, whitewashed buildings, and crystal waters.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card destination-card">
+                        <img src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8" class="card-img-top" alt="Machu Picchu">
+                        <div class="card-body">
+                            <h5 class="card-title">Machu Picchu, Peru</h5>
+                            <p class="card-text">Explore the ancient Incan city nestled in the Andes Mountains.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Tour Packages</h2>
+            <div class="accordion" id="toursAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tour1" aria-expanded="true" aria-controls="tour1">
+                            Tropical Escape
+                        </button>
+                    </h2>
+                    <div id="tour1" class="accordion-collapse collapse show" data-bs-parent="#toursAccordion">
+                        <div class="accordion-body">
+                            A 7-day adventure through tropical islands with guided tours and beach relaxation.
+                            <a href="#" class="d-block mt-2">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour2" aria-expanded="false" aria-controls="tour2">
+                            Cultural Odyssey
+                        </button>
+                    </h2>
+                    <div id="tour2" class="accordion-collapse collapse" data-bs-parent="#toursAccordion">
+                        <div class="accordion-body">
+                            Immerse yourself in local traditions and history with this 10-day cultural tour.
+                            <a href="#" class="d-block mt-2">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour3" aria-expanded="false" aria-controls="tour3">
+                            Mountain Adventure
+                        </button>
+                    </h2>
+                    <div id="tour3" class="accordion-collapse collapse" data-bs-parent="#toursAccordion">
+                        <div class="accordion-body">
+                            Trek through stunning mountain landscapes with expert guides over 5 days.
+                            <a href="#" class="d-block mt-2">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-5 contact-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="destination" class="form-label">Destination of Interest</label>
+                            <select class="form-select" id="destination" required>
+                                <option selected disabled>Select a destination</option>
+                                <option value="bali">Bali, Indonesia</option>
+                                <option value="santorini">Santorini, Greece</option>
+                                <option value="machu-picchu">Machu Picchu, Peru</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 HyperTech Travel Agency. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
